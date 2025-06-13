@@ -1,0 +1,96 @@
+/* -----POPTAVKA----- */
+
+.form-container {
+  max-width: 520px;
+  background-color: #f3f4f6;
+  margin: 40px;
+  padding: 40px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #075547;
+}
+
+.form-container h1 span {
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  color: #075547;
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  text-align: center;
+  font-size: 14px;
+  color: #075547;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #075547;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-top: 8px;
+  background-color: white;
+  color: #374150;
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.file-label {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #075547;
+}
+
+button {
+  display: block;
+  width: 50%;
+  background-color: #075547;
+  opacity: 80%;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  padding: 14px 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #075547;
+}

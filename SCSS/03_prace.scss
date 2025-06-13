@@ -1,0 +1,76 @@
+
+/* -----PRACA----- */
+.experience {
+  background-color: #f3f4f6;
+  width: 100%;
+}
+
+.experience-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Box s fotkou */
+.photo-box {
+  background-color: pink;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Obrázek uvnitř rámečku */
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.photo-box.double {
+  grid-column: span 2;
+}
+
+/* Textový blok */
+.job-entry {
+  background-color: transparent;
+  padding: 0;
+  grid-column: span 1; 
+  margin-top: 50px;
+}
+
+.job-entry h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #075547;
+}
+
+.job-entry .years {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #69707c;
+}
+
+.job-entry h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #374150;
+}
+
+.job-entry p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  color: #69707c;
+}

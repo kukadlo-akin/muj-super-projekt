@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+/* Barva
+#f3f4f6
+#d1d5db
+#69707c
+#374150
+#0f172a 
+#075547*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  color: #0f172a;
+  margin: 0 auto;
+}
+
+.header-inner,
+.skills,
+.experience,
+.education {
+  margin: 0 auto;
+}
+
+header {
+  background-color: #f3f4f6;
+  padding-bottom: 40px;
+  height: 170px;
+}
+
+.header-inner {
+  display: flex;
+  max-width: 1300px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Levý blok: menu a úvod */
+.left {
+  width: 70%;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-wrapper {
+  height: 130px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  fill: white;
+}
+
+/* 1) Definice barevné proměnné */
+:root {
+  --menu-text: #bec0c3;
+}
+
+/* 2) Menu container */
+.main-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  padding: 0; /* už sis vyresetoval padding i tady */
+}
+
+/* 3) Odkazy jako bloky + základní styl */
+.main-menu ul li a {
+  display: inline-block; /* aby filter fungoval spolehlivě */
+  text-decoration: none;
+  color: var(--menu-text); /* použijeme proměnnou */
+  font-weight: 500;
+  font-size: 16px;
+  transition: filter 0.2s ease; /* přechod pro jas */
+}
+
+/* 4) Hover a active stavy */
+.main-menu ul li a:hover {
+  filter: brightness(0.8); /* 80 % jasu */
+  color: #075547;
+}
+
+.main-menu ul li a:active {
+  filter: brightness(1); /* 100 % jasu */
+}
+
+/* Úvodní text */
+.about {
+  background-color: #f3f4f6;
+}
+
+.about-inner {
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #f3f4f6;
+}
+
+.me {
+  width: 100%;
+  max-width: 700px;
+  margin: 0; /* žádné centrování */
+  padding: 0;
+  overflow: hidden;
+}
+
+.me svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  fill: #075547;
+  opacity: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0;
+}
+
+.about h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  color: #374150;
+}
+
+/* Pravý blok: fotka */
+.right {
+  width: 30%;
+  position: relative;
+  filter: drop-shadow(0px 30px 50px rgba(13, 39, 80, 0.16));
+}
+
+.right .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.photo img {
+  filter: grayscale(90%);
+  transition: filter 1s ease;
+}
+
+.photo img:hover {
+  filter: grayscale(0%);
+}/*# sourceMappingURL=01_menu.css.map */

@@ -1,0 +1,33 @@
+---
+layout: menu.njk
+title: Portfolio
+---
+
+
+<section class="form-container">
+  <h1><span>Grafická spolupráce</span> Poptávkový formulář</h1>
+
+  <div class="contact-info">
+  </div>
+
+  <form action="https://formspree.io/f/xyzjwvea" method="POST">
+    <input type="hidden" name="_redirect" value="https://kukadlo-akin.github.io/dekujeme.html">
+
+    <label for="name">Vaše jméno</label>
+    <input type="text" id="name" name="name" placeholder="např. Jana Nováková" required>
+
+    <label for="email">E-mail pro kontakt</label>
+    <input type="email" id="email" name="email" placeholder="např. jana@email.cz" required>
+
+    <label for="service">Jakou službu potřebujete?</label>
+    <input type="text" id="service" name="service" placeholder="např. návrh plakátu, úprava loga...">
+
+    <label for="description">Popište stručně svou představu</label>
+    <textarea id="description" name="description" rows="6" placeholder="např. leták na akci s dětským motivem..."></textarea>
+
+    <label for="link" class="file-label">Odkaz na soubory (např. Google Disk)</label>
+    <input type="text" id="link" name="link" placeholder="https://drive.google.com/…">
+
+    <button type="submit">Odeslat poptávku</button>
+  </form>
+</section>

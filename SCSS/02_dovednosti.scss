@@ -1,0 +1,78 @@
+
+
+.skills {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.skills-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+/* Levý blok: text */
+.skills-text {
+  width: 45%;
+  text-align: right;
+  padding-left: 70px;
+}
+
+.skills-icon {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  fill: #075547;
+  opacity: 80%;
+  max-height: 130px;
+  overflow: hidden;
+}
+
+
+.skills-text h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.skills-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding-top: 40px;
+  margin-top: 0;
+  color: #374150;
+}
+
+/* Pravý blok: skill bary */
+.skills-bars {
+  width: 40%;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #374150;
+}
+
+.skill-bar {
+  background-color: #f3f4f6;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 20px;
+  background-color: #d1d5db;
+  border-radius: 10px;
+}
