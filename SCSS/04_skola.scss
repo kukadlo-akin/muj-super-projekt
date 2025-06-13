@@ -40,12 +40,12 @@
   padding: 0 20px;
 }
 
-/* První box - linka vlevo nenecháváme */
+
 .edu-entry:first-child {
   padding-left: 0;
 }
 
-/* Poslední box - odstraníme linku a přebytečný padding */
+
 .edu-entry:last-child {
   border-right: none;
   padding-right: 0;

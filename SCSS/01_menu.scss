@@ -38,7 +38,7 @@ header {
   padding-right: 40px;    
 }
 
-/* Levý blok: menu a úvod */
+
 .left {
   width: 70%;
   padding-right: 40px;
@@ -62,40 +62,39 @@ header {
   fill: white;
 }
 
-/* 1) Definice barevné proměnné */
+
 :root {
   --menu-text: #bec0c3;
 }
 
-/* 2) Menu container */
+
 .main-menu ul {
   list-style: none;
   display: flex;
   gap: 20px;
   margin-bottom: 40px;
   flex-wrap: wrap;
-  padding: 0; /* už sis vyresetoval padding i tady */
+  padding: 0; 
 }
 
-/* 3) Odkazy jako bloky + základní styl */
+
 .main-menu ul li a {
-  display: inline-block;              /* aby filter fungoval spolehlivě */
+  display: inline-block;             
   text-decoration: none;
-  color: var(--menu-text);            /* použijeme proměnnou */
+  color: var(--menu-text);           
   font-weight: 500;
   font-size: 16px;
-  transition: filter 0.2s ease;       /* přechod pro jas */
+  transition: filter 0.2s ease;     
 }
 
-/* 4) Hover a active stavy */
+
 .main-menu ul li a:hover {
-  filter: brightness(0.8);             /* 80 % jasu */
+  filter: brightness(0.8);      
   color: #075547;
 }
 
 .main-menu ul li a:active {
-  filter: brightness(1);             /* 100 % jasu */
-}
+  filter: brightness(1);     
 
 
 
@@ -114,7 +113,7 @@ header {
 .me {
   width: 100%;
   max-width: 700px;
-  margin: 0;                /* žádné centrování */
+  margin: 0;            
   padding: 0;
   overflow: hidden;
 }
