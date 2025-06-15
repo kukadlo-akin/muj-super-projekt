@@ -1,8 +1,10 @@
-@charset "UTF-8";
+
+
 .skills {
   max-width: 1300px;
   margin: 0 auto;
   padding: 40px;
+  margin-top: 30px;
 }
 
 .skills-wrapper {
@@ -17,32 +19,19 @@
   padding-left: 70px;
 }
 
-.skills-icon {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  fill: #075547;
-  opacity: 80%;
-  max-height: 130px;
-  overflow: hidden;
-}
-
-.skills-text h2 {
-  font-size: 24px;
-  font-weight: 700;
+.skills-text h4 {
+  font-size: 50px;
+  line-height: 1.1;
+  color: #374150;
+  font-family: "Bodoni Moda", serif;
   margin-bottom: 20px;
-  margin-top: 0;
 }
 
 .skills-text p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 10px;
-  padding-top: 40px;
-  margin-top: 0;
-  color: #374150;
+  max-width: 500px;
+  color: #69707c;
 }
 
 /* Pravý blok: skill bary */
@@ -73,4 +62,41 @@
   height: 20px;
   background-color: #d1d5db;
   border-radius: 10px;
-}/*# sourceMappingURL=02_dovednosti.css.map */
+}
+
+@media (max-width: 1023px) {
+
+  .skills-text {
+  width: auto;
+  padding-left: 0;
+  }
+
+  .skills-bars {
+  width: 60%;
+}
+}
+
+@media (max-width: 557px) {
+
+    .skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-text {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .skills-text h4 {
+    margin-top: 0;
+  }
+
+  .skills-bars {
+    width: 100%;
+  }
+
+}
+

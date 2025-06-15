@@ -7,24 +7,19 @@
   padding: 40px;
   border-radius: 20px;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 1px 9px -3px rgba(0,0,0,0.50); 
 }
 
 .form-container h1 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #374150;
+  font-family: "Bodoni Moda", serif;
+  margin: 0;
+  margin-bottom: 40px;
   text-align: center;
-  color: #075547;
 }
 
-.form-container h1 span {
-  font-size: 18px;
-  font-weight: 400;
-  display: block;
-  color: #075547;
-  margin-bottom: 5px;
-}
 
 .contact-info {
   text-align: center;
@@ -37,9 +32,11 @@
 label {
   display: block;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 250;
   margin-top: 20px;
   color: #075547;
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
 }
 
 input[type="text"],
@@ -53,6 +50,12 @@ textarea {
   margin-top: 8px;
   background-color: white;
   color: #374150;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #d1d5db; 
+  opacity: 1;     
 }
 
 textarea {
@@ -69,8 +72,10 @@ input[type="file"] {
   display: block;
   margin-top: 20px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 250;
   color: #075547;
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
 }
 
 button {
@@ -79,7 +84,7 @@ button {
   background-color: #075547;
   opacity: 80%;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   border: none;
   border-radius: 15px;
@@ -93,4 +98,20 @@ button {
 
 button:hover {
   background-color: #075547;
+}
+
+@media (max-width: 1023px) {
+
+  .form-container {
+    margin: 40px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 30px 20px;
+    margin: 30px
+  }
 }
