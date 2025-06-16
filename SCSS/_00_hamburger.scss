@@ -1,9 +1,8 @@
-/* Hamburger menu */
+
 :root {
   --menu-text: #bec0c3;
 }
 
-/* Hlavička */
 .nav {
   background-color: #ffffff;
   padding: 40px 0;
@@ -18,7 +17,6 @@
   padding: 0 20px;
 }
 
-/* Klasické menu pro desktop */
 .nav-links {
   display: flex;
 }
@@ -52,7 +50,6 @@
   filter: brightness(1);
 }
 
-/* Ikona burgeru */
 .burger {
   display: none;
   font-size: 30px;
@@ -64,7 +61,13 @@
   right: 10px;
 }
 
-/* Offcanvas menu */
+.burger.active {
+  font-size: 25px;
+  color: #075547;
+  top: 15px;
+  right: 15px;
+}
+
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -111,14 +114,13 @@
   color: #075547;
 }
 
-/* Media query – mobilní verze */
 @media (max-width: 786px) {
 
   .burger {
     display: block;
   }
     .nav {
-    background-color: #f3f4f6;
+    padding-bottom: 0;
     }
 
   .nav-links {

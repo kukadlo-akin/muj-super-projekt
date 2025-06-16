@@ -1,5 +1,4 @@
 
-/* -----PRACA----- */
 .experience {
   background-color: #f3f4f6;
   width: 100%;
@@ -38,7 +37,6 @@
   gap: 40px;
 }
 
-/* Box s fotkou */
 .photo-box {
   width: 100%;
   border-radius: 10px;
@@ -64,7 +62,6 @@
   filter: grayscale(0%);
 }
 
-/* Fotobox s přechodem na text */
 .hover-text-box {
   position: relative;
   cursor: pointer;
@@ -103,7 +100,6 @@
   line-height: 1.4;
 }
 
-/* Při hoveru skryj fotku a ukaž text */
 .hover-text-box:hover img {
   opacity: 0;
 }
@@ -113,7 +109,6 @@
   visibility: visible;
 }
 
-/* Textový blok */
 .job-entry {
   background-color: transparent;
   padding: 0;

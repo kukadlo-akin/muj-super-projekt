@@ -18,30 +18,12 @@ body {
   margin: 0 auto;
 }
 
-header {
-    background-color: #f3f4f6; 
-    /* height: 170px;*/
-}
-
-.header-inner {
-  display: flex;
-  max-width: 1300px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin: 0 auto;    
-}
-
-.left {
-  width: 70%;
-  padding-right: 40px;
-  display: flex;
-  flex-direction: column;
-}
 
 .logo-wrapper {
   height: 130px;
-  margin-top: -40px;
-  margin-bottom: 20px;
+  margin-top: -20px;
+  margin-bottom: 0;
+  padding-left: 40px;
   z-index: 0;
 }
 
@@ -49,105 +31,37 @@ header {
   display: block;
   width: 100%;
   max-width: 1000px;
-  fill: white;
+  fill: #f3f4f6;
 }
 
-:root {
-  --menu-text: #bec0c3;
-}
-
-.main-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-  padding: 0; 
-}
-
-.main-menu ul li a {
-  display: inline-block;             
-  text-decoration: none;
-  color: var(--menu-text);           
-  font-weight: 300;
-  font-size: 14px;
-  transition: filter 0.2s ease;
-  text-transform: uppercase; 
-  letter-spacing: 1px;     
-}
-
-.main-menu ul li a:hover {
-  filter: brightness(0.8);      
-  color: #075547;
-}
-
-.main-menu ul li a:active {
-  filter: brightness(1);     
-}
-
-/* Pravý blok: fotka */
-.right {
-  width: 30%;
-  position: relative;
-}
-
-.right .photo img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: 0 0 20px 20px;
-  position: relative;
-  top: 0;
-  right: 0;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-}
-
-.photo img {
-  filter: grayscale(90%);
-  transition: filter 1s ease;
-}
-
-.photo img:hover {
-  filter: grayscale(0%);
-}
-
-@media (max-width: 1202px) {
-
-    .main-menu ul {
-    gap: 20px;
-  }
-
+@media (max-width: 921px) {
     .logo-wrapper {
-    margin-bottom: 10px;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: auto;
+    line-height: 0;
+  }
+
+  .logo {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: -5px;
+    margin-top: -20;
+  }
+
+  .about {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 
-@media (max-width: 1023px) {
-
-  .header-inner {
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .left,
-  .right {
-    width: 100%;
-    padding: 0;
-  }
-
-  .logo-wrapper {
-    margin-bottom: 20px;
-  }
-
-  .main-menu ul {
-    justify-content: center;
-    gap: 25px;
-  }
-
-  /* SKOUŠKA: skrýt fotku na tabletu a menších */
-  .right {
-    display: none;
+@media (max-width: 681px) {
+  .logo {
+    margin-bottom: -5px;
+    margin-top: -20px;
   }
 }

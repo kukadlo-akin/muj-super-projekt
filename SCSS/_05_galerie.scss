@@ -1,6 +1,4 @@
-/* -----GALERIE----- */
 
-/* Úvodní 3 fotky – zarovnané vlevo */
 .intro-photos {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr;
@@ -21,18 +19,18 @@
   box-shadow: 2px 1px 9px -3px rgba(0,0,0,0.50); 
 }
 
-/* Sekce s galerií */
+
 .gallery-section {
-  background-color: #f3f4f6; /* světle šedá plocha */
+  background-color: #f3f4f6; 
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* čtyři sloupce */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 10px;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 40px; /* stejné zarovnání jako intro-photos */
+  padding: 40px; 
 }
 
 .item {
