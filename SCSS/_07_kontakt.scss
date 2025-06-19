@@ -1,0 +1,56 @@
+
+
+.contact-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin-right: auto;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info p {
+  font-size: 15px;
+  font-weight: 250;
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: #075547;
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+
+.social-links {
+  display: flex;
+  gap: 30px;
+}
+
+.social-icon svg {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social-icon:hover svg {
+  transform: scale(1.2);
+}
+ 
+@media (max-width: 1023px) {
+  .social-links {
+    justify-content: center;
+  }
+
+.contact-info {
+  text-align: center;
+}
+
+  .contact-container {
+  margin: 0 auto;
+}
+}

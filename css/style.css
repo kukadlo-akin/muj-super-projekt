@@ -232,12 +232,11 @@ body {
   width: calc(100% - 40px);
   height: auto;
   display: block;
-  border-radius: 0 0 10px 10px;
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 400px;
-  margin: 0 0 40px 40px;
-  box-shadow: 2px 1px 9px -3px rgba(0, 0, 0, 0.5);
+  margin: 40px 0 40px 40px;
+  padding-left: 40px;
 }
 
 .one-inner {
@@ -303,12 +302,13 @@ body {
     margin-top: 30px;
   }
   .one-photo img {
-    width: 200px;
+    width: auto;
     height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 50%;
     margin: 0;
+    padding-left: 0;
+    margin-bottom: -30px;
   }
 }
 .skills {
@@ -455,8 +455,7 @@ body {
      object-fit: cover;
   display: block;
   border-radius: 10px;
-  border: 1px solid #d1d5db;
-  filter: grayscale(90%);
+  filter: grayscale(94%);
   transition: filter 0.5s ease;
 }
 
@@ -521,7 +520,6 @@ body {
   padding: 30px;
   padding-top: 50px;
   padding-bottom: 50px;
-  border: 1px solid #d1d5db;
   border-radius: 10px;
   box-shadow: 2px 1px 9px -3px rgba(0, 0, 0, 0.5);
 }
@@ -684,6 +682,7 @@ body {
   overflow: hidden;
   margin-top: 10px;
   position: relative;
+  box-shadow: 2px 1px 9px -3px rgba(0, 0, 0, 0.5);
 }
 
 .square img {
@@ -991,6 +990,58 @@ button:hover {
   .form-container {
     padding: 30px 20px;
     margin: 30px;
+  }
+}
+.contact-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin-right: auto;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info p {
+  font-size: 15px;
+  font-weight: 250;
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: #075547;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.social-links {
+  display: flex;
+  gap: 30px;
+}
+
+.social-icon svg {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social-icon:hover svg {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1023px) {
+  .social-links {
+    justify-content: center;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .contact-container {
+    margin: 0 auto;
   }
 }
 .footer {

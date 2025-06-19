@@ -53,8 +53,7 @@
   object-fit: cover;
   display: block;
   border-radius: 10px;
-  border: 1px solid #d1d5db;
-  filter: grayscale(90%);
+  filter: grayscale(94%);
   transition: filter 0.5s ease;
 }
 
@@ -119,7 +118,6 @@
   padding: 30px;
   padding-top: 50px;
   padding-bottom: 50px;
-  border: 1px solid #d1d5db;
   border-radius: 10px;
   box-shadow: 2px 1px 9px -3px rgba(0,0,0,0.50);  
 }
